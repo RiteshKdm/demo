@@ -11,13 +11,17 @@ load_dotenv()
 try:
     api_key = os.getenv('GROQ_API_KEY')
     if not api_key:
-        api_key = st.secrets["GROQ_API_KEY"]
+        try:
+            api_key = st.secrets["GROQ_API_KEY"]
+        except:
+            st.error("API key not found in environment variables or Streamlit secrets")
+            st.stop()
     
-    if not api_key:
-        st.error("API key not found in environment variables or Streamlit secrets")
-        st.stop()
-        
-    client = Groq(api_key=api_key)
+    # Initialize Groq client without additional parameters
+    client = Groq(
+        api_key=api_key
+    )
+    
 except Exception as e:
     st.error(f"Failed to initialize Groq client: {str(e)}")
     st.stop()

@@ -1,0 +1,1436 @@
+[
+    {
+      "JIRAID": "PY-001",
+      "Component": "Function",
+      "Summary": "Python|Mutable Default Arguments Issue",
+      "Description": "Using mutable default arguments in functions can lead to unexpected behavior.",
+      "CreatedOn": "2025/01/15 10:15:30",
+      "UpdatedOn": "2025/01/16 11:20:45",
+      "Comment": [
+        {
+          "comment": "Ensure each function call gets a new list by using None as the default. \nThis prevents the default list from being shared across multiple function calls. \nIt helps avoid unintended side effects caused by modifying the same list.",
+          "timestamp": "2025/01/15 10:16:30"
+        },
+        {
+          "comment": "Mutable default arguments can cause shared state issues. \nAlways initialize mutable objects inside the function to ensure they are unique. \nThis practice helps maintain the integrity of function behavior.",
+          "timestamp": "2025/01/16 11:21:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-002",
+      "Component": "Function",
+      "Summary": "Python|Mutable Default Arguments Issue",
+      "Description": "Modifying a list while iterating over it can cause elements to be skipped.",
+      "CreatedOn": "2025/02/01 09:10:20",
+      "UpdatedOn": "2025/02/02 10:15:35",
+      "Comment": [
+        {
+          "comment": "Create a new list instead of modifying the original one to prevent iteration issues. \nThis ensures that the iteration process is not disrupted by changes to the list. \nIt helps maintain the consistency of the iteration.",
+          "timestamp": "2025/02/01 09:11:20"
+        },
+        {
+          "comment": "Using list comprehensions can help avoid this problem. \nList comprehensions create a new list based on the original, avoiding modification issues. \nThey provide a clean and efficient way to process lists.",
+          "timestamp": "2025/02/02 10:16:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-003",
+      "Component": "Function",
+      "Summary": "Python|Mutable Default Arguments Issue",
+      "Description": "The login button is misaligned on the homepage. It needs to be centered properly.",
+      "CreatedON": "2025-02-01T10:00:00Z",
+      "UpdatedOn": "2025-02-08T15:30:00Z",
+      "Comment": [
+        {
+          "comment": "Initial report of the issue.",
+          "timestamp": "2025-02-01T10:05:00Z"
+        },
+        {
+          "comment": "Issue assigned to the UI team.",
+          "timestamp": "2025-02-02T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-004",
+      "Component": "Function",
+      "Summary": "Python|Mutable Default Arguments Issue",
+      "Description": "Intermittent database connection timeouts observed during peak hours.",
+      "CreatedON": "2025-02-02T09:00:00Z",
+      "UpdatedOn": "2025-02-08T14:00:00Z",
+      "Comment": [
+        {
+          "comment": "Reported by monitoring system.",
+          "timestamp": "2025-02-02T09:05:00Z"
+        },
+        {
+          "comment": "Investigating potential causes.",
+          "timestamp": "2025-02-03T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-005",
+      "Component": "Module",
+      "Summary": "Python|ImportError: No module named",
+      "Description": "Occurs when a module is not found.",
+      "CreatedOn": "2025/01/20 08:05:10",
+      "UpdatedOn": "2025/01/21 09:10:25",
+      "Comment": [
+        {
+          "comment": "Check if the module is installed using pip and verify the import path. \nEnsure that the module name is correctly spelled and matches the installed package. \nThis helps to confirm that the module is available for import.",
+          "timestamp": "2025/01/20 08:06:10"
+        },
+        {
+          "comment": "Ensure the virtual environment is activated if using one. \nVirtual environments isolate dependencies, so the module must be installed within the environment. \nActivating the environment ensures the correct modules are accessible.",
+          "timestamp": "2025/01/21 09:11:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-006",
+      "Component": "Module",
+      "Summary": "Python|ImportError: No module named",
+      "Description": "The API response time is slower than expected for certain endpoints.",
+      "CreatedON": "2025-02-03T11:00:00Z",
+      "UpdatedOn": "2025-02-08T13:30:00Z",
+      "Comment": [
+        {
+          "comment": "Import Issue reported by python client.",
+          "timestamp": "2025-02-03T11:05:00Z"
+        },
+        {
+          "comment": "Performance testing initiated.",
+          "timestamp": "2025-02-04T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-007",
+      "Component": "Module",
+      "Summary": "Python|ImportError: No module named",
+      "Description": "A security vulnerability was found in the authentication module.",
+      "CreatedON": "2025-02-04T08:00:00Z",
+      "UpdatedOn": "2025-02-08T12:00:00Z",
+      "Comment": [
+        {
+          "comment": "Python Security team notified by client side Developer.",
+          "timestamp": "2025-02-04T08:05:00Z"
+        },
+     {
+          "comment": "Python Patch development in progress.",
+          "timestamp": "2025-02-05T09:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "PY-008",
+      "Component": "Module",
+      "Summary": "Python|ImportError: No module named",
+      "Description": "Accessing an index that is out of the range of the list.",
+      "CreatedOn": "2025/02/05 07:00:00",
+      "UpdatedOn": "2025/02/06 08:05:15",
+      "Comment": [
+        {
+          "comment": "Always check the length of the list before accessing an index. \nThis helps to ensure that the index is within the valid range. \nIt prevents IndexError exceptions and maintains code stability.",
+          "timestamp": "2025/02/05 07:01:00"
+        },
+        {
+          "comment": "Use try-except blocks to handle potential IndexErrors. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected index access issues.",
+          "timestamp": "2025/02/06 08:06:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-009",
+      "Component": "Module",
+      "Summary": "Python|ImportError: No module named",
+      "Description": "Occurs when an operation is performed on incompatible types.",
+      "CreatedOn": "2025/01/25 06:55:50",
+      "UpdatedOn": "2025/01/26 07:00:05",
+      "Comment": [
+        {
+          "comment": "Use type checking or conversion to ensure operands are compatible. \nThis helps to avoid TypeError exceptions by ensuring the correct types are used. \nType checking can be done using the isinstance() function.",
+          "timestamp": "2025/01/25 06:56:50"
+        },
+        {
+          "comment": "Check the types of variables before performing operations. \nThis practice helps to identify potential type issues early in the code. \nIt ensures that operations are performed on compatible types.",
+          "timestamp": "2025/01/26 07:01:05"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-010",
+      "Component": "Syntax",
+      "Summary": "Python|SyntaxError",
+      "Description": "Occurs when the Python interpreter encounters incorrect syntax.",
+      "CreatedOn": "2025/01/30 05:50:40",
+      "UpdatedOn": "2025/01/31 06:55:55",
+      "Comment": [
+        {
+          "comment": "Check for missing colons, parentheses, or other syntax errors. \nSyntax errors are often caused by small mistakes in the code. \nReviewing the code carefully can help identify and fix these errors.",
+          "timestamp": "2025/01/30 05:51:40"
+        },
+        {
+          "comment": "Use a linter to catch syntax errors before running the code. \nLinters can automatically detect and highlight syntax issues. \nThey help to maintain code quality and prevent runtime errors.",
+          "timestamp": "2025/01/31 06:56:55"
+        }
+      ]
+    },
+  {
+      "JIRAID": "JIRA-011",
+      "Component": "Syntax",
+      "Summary": "Python|SyntaxError",
+      "Description": "Several image links on the dashboard are broken and not displaying correctly.",
+      "CreatedON": "2025-02-05T07:00:00Z",
+      "UpdatedOn": "2025-02-08T11:00:00Z",
+      "Comment": [
+        {
+          "comment": "Syntax Issue reported by client side QA team.",
+          "timestamp": "2025-02-05T07:05:00Z"
+        },
+        {
+          "comment": "Product Images re-uploaded.",
+          "timestamp": "2025-02-06T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-012",
+      "Component": "Syntax",
+      "Summary": "Python|SyntaxError",
+      "Description": "A memory leak has been detected in one of the backend services.",
+      "CreatedON": "2025-02-06T06:00:00Z",
+      "UpdatedOn": "2025-02-08T10:00:00Z",
+      "Comment": [
+        {
+          "comment": "Image Memory usage spike observed.",
+          "timestamp": "2025-02-06T06:05:00Z"
+        },
+        {
+          "comment": "Bug Leak identified and fixed.",
+          "timestamp": "2025-02-07T07:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "PY-013",
+      "Component": "Syntax",
+      "Summary": "Python|SyntaxError",
+      "Description": "Occurs when there is an indentation issue in the code.",
+      "CreatedOn": "2025/02/03 04:45:30",
+      "UpdatedOn": "2025/02/04 05:50:45",
+      "Comment": [
+        {
+          "comment": "Ensure consistent use of tabs and spaces for indentation. \nMixing tabs and spaces can lead to indentation errors. \nUsing a consistent indentation style helps to avoid these issues.",
+          "timestamp": "2025/02/03 04:46:30"
+        },
+        {
+          "comment": "Use an IDE that highlights indentation issues. \nMany IDEs provide features to detect and correct indentation problems. \nThis helps to maintain proper code formatting and readability.",
+          "timestamp": "2025/02/04 05:51:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-014",
+      "Component": "Syntax",
+      "Summary": "Python|SyntaxError",
+      "Description": "Occurs when an invalid attribute reference is made.",
+      "CreatedOn": "2025/01/28 03:40:20",
+      "UpdatedOn": "2025/01/29 04:45:35",
+      "Comment": [
+        {
+          "comment": "Check if the attribute exists and is correctly spelled. \nAttributeErrors often occur due to typos or incorrect attribute names. \nVerifying the attribute name helps to avoid these errors.",
+          "timestamp": "2025/01/28 03:41:20"
+        },
+        {
+          "comment": "Use hasattr() to check for attribute existence before accessing it. \nThis function allows you to verify if an object has a specific attribute. \nIt helps to prevent AttributeErrors by ensuring the attribute is present.",
+          "timestamp": "2025/01/29 04:46:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-015",
+      "Component": "Dictionary",
+      "Summary": "Python|KeyError",
+      "Description": "Occurs when a dictionary key is not found.",
+      "CreatedOn": "2025/02/02 02:35:10",
+      "UpdatedOn": "2025/02/03 03:40:25",
+      "Comment": [
+        {
+          "comment": "Use the get() method to avoid KeyErrors. \nThe get() method returns a default value if the key is not found. \nThis helps to prevent KeyErrors and provides a fallback value.",
+          "timestamp": "2025/02/02 02:36:10"
+        },
+        {
+          "comment": "Check if the key exists in the dictionary before accessing it. \nUsing the in keyword allows you to verify if a key is present in the dictionary. \nThis helps to avoid KeyErrors by ensuring the key is valid.",
+          "timestamp": "2025/02/03 03:41:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-016",
+      "Component": "Dictionary",
+      "Summary": "Python|KeyError",
+      "Description": "API is returning incorrect data for certain queries.",
+      "CreatedON": "2025-02-07T05:00:00Z",
+      "UpdatedOn": "2025-02-08T09:00:00Z",
+      "Comment": [
+        {
+          "comment": "Client reported data discrepancy.",
+          "timestamp": "2025-02-07T05:05:00Z"
+        },
+        {
+          "comment": "Data validation in progress.",
+          "timestamp": "2025-02-08T06:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-017",
+      "Component": "Dictionary",
+      "Summary": "Python|KeyError",
+      "Description": "Multiple unauthorized access attempts detected.",
+      "CreatedON": "2025-02-08T04:00:00Z",
+      "UpdatedOn": "2025-02-08T08:00:00Z",
+      "Comment": [
+        {
+          "comment": "Key Security alert triggered.",
+          "timestamp": "2025-02-08T04:05:00Z"
+        },
+        {
+          "comment": "Access logs reviewed by BA.",
+          "timestamp": "2025-02-08T07:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-018",
+      "Component": "Dictionary",
+      "Summary": "Python|KeyError",
+      "Description": "Occurs when a function receives an argument of the correct type but inappropriate value.",
+      "CreatedOn": "2025/01/22 01:30:00",
+      "UpdatedOn": "2025/01/23 02:35:15",
+      "Comment": [
+        {
+          "comment": "Validate input values before processing. \nEnsuring that input values meet the expected criteria helps to avoid ValueErrors. \nThis practice helps maintain the integrity of function behavior.",
+          "timestamp": "2025/01/22 01:31:00"
+        },
+        {
+          "comment": "Use try-except blocks to handle potential ValueErrors. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected value issues.",
+          "timestamp": "2025/01/23 02:36:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-019",
+      "Component": "File Handling",
+      "Summary": "Python|FileNotFoundError",
+      "Description": "Occurs when an attempt to open a file fails because the file does not exist.",
+      "CreatedOn": "2025/02/10 10:00:00",
+      "UpdatedOn": "2025/02/11 11:05:15",
+      "Comment": [
+        {
+          "comment": "Ensure the file path is correct and the file exists. \nDouble-check the file path for typos and confirm the file's presence. \nThis helps to avoid FileNotFoundError by ensuring the file is accessible.",
+          "timestamp": "2025/02/10 10:01:00"
+        },
+        {
+          "comment": "Use try-except blocks to handle potential FileNotFoundErrors. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected file access issues.",
+          "timestamp": "2025/02/11 11:06:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-020",
+      "Component": "File Handling",
+      "Summary": "Python|FileNotFoundError",
+      "Description": "Text elements are overlapping on the mobile view of the homepage.",
+      "CreatedON": "2025-02-09T03:00:00Z",
+      "UpdatedOn": "2025-02-08T07:30:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by multiple user.",
+          "timestamp": "2025-02-09T03:05:00Z"
+        },
+        {
+          "comment": "Python CSS adjustments made.",
+          "timestamp": "2025-02-09T04:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-021",
+      "Component": "File Handling",
+      "Summary": "Python|FileNotFoundError",
+      "Description": "Backend service crashes when subjected to high load.",
+      "CreatedON": "2025-02-10T02:00:00Z",
+      "UpdatedOn": "2025-02-08T06:30:00Z",
+      "Comment": [
+        {
+          "comment": "Load testing initiated.",
+          "timestamp": "2025-02-10T02:05:00Z"
+        },
+        {
+          "comment": "Service optimized for load handling.",
+          "timestamp": "2025-02-10T03:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-022",
+      "Component": "File Handling",
+      "Summary": "Python|FileNotFoundError",
+      "Description": "API keys are expiring prematurely.",
+      "CreatedON": "2025-02-11T01:00:00Z",
+      "UpdatedOn": "2025-02-08T05:30:00Z",
+      "Comment": [
+        {
+          "comment": "File Issue reported by developer and QA.",
+          "timestamp": "2025-02-11T01:05:00Z"
+        },
+        {
+          "comment": "Python Key expiration policy reviewed.",
+          "timestamp": "2025-02-11T02:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "PY-023",
+      "Component": "File Handling",
+      "Summary": "Python|FileNotFoundError",
+      "Description": "Occurs when a Unicode-related error happens during decoding.",
+      "CreatedOn": "2025/02/12 09:45:30",
+      "UpdatedOn": "2025/02/13 10:50:45",
+      "Comment": [
+        {
+          "comment": "Specify the correct encoding when reading files. \nUsing the correct encoding helps to avoid UnicodeDecodeError. \nCommon encodings include 'utf-8' and 'latin-1'.",
+          "timestamp": "2025/02/12 09:46:30"
+        },
+        {
+          "comment": "Use error handling strategies like 'ignore' or 'replace'. \nThese strategies allow you to handle decoding errors gracefully. \nThey help to manage unexpected encoding issues.",
+          "timestamp": "2025/02/13 10:51:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-024",
+      "Component": "Concurrency",
+      "Summary": "Python|Threading Issue",
+      "Description": "Issues related to using threads in Python, such as race conditions.",
+      "CreatedOn": "2025/02/14 08:40:20",
+      "UpdatedOn": "2025/02/15 09:45:35",
+      "Comment": [
+        {
+          "comment": "Use threading locks to prevent race conditions. \nLocks ensure that only one thread can access a resource at a time. \nThis helps to maintain data integrity and avoid concurrency issues.",
+          "timestamp": "2025/02/14 08:41:20"
+        },
+        {
+          "comment": "Consider using higher-level concurrency primitives like queues. \nQueues provide a thread-safe way to exchange data between threads. \nThey help to simplify thread management and avoid common pitfalls.",
+          "timestamp": "2025/02/15 09:46:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-025",
+      "Component": "Concurrency",
+      "Summary": "Python|Threading Issue",
+      "Description": "Data synchronization between servers is failing intermittently.",
+      "CreatedON": "2025-02-12T09:00:00Z",
+      "UpdatedOn": "2025-02-12T14:00:00Z",
+      "Comment": [
+        {
+          "comment": "Synchronization Report by monitoring  system.",
+          "timestamp": "2025-02-12T09:05:00Z"
+        },
+        {
+          "comment": "Investigating network issues.",
+          "timestamp": "2025-02-12T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-026",
+      "Component": "Concurrency",
+      "Summary": "Python|Threading Issue",
+      "Description": "Clients are exceeding the API rate limit, causing throttling.",
+      "CreatedON": "2025-02-13T11:00:00Z",
+      "UpdatedOn": "2025-02-13T13:30:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by US client.",
+          "timestamp": "2025-02-13T11:05:00Z"
+        },
+        {
+          "comment": "Rate limit increased temporarily.",
+          "timestamp": "2025-02-13T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-027",
+      "Component": "Concurrency",
+      "Summary": "Python|Threading Issue",
+      "Description": "Occurs when a program consumes more memory over time due to improper resource management.",
+      "CreatedOn": "2025/02/16 07:35:10",
+      "UpdatedOn": "2025/02/17 08:40:25",
+      "Comment": [
+        {
+          "comment": "Use memory profiling tools to identify memory leaks. \nTools like objgraph and memory_profiler can help pinpoint memory issues. \nThey provide insights into memory usage and potential leaks.",
+          "timestamp": "2025/02/16 07:36:10"
+        },
+        {
+          "comment": "Ensure proper cleanup of resources, such as closing files and connections. \nUsing context managers (with statements) helps to manage resources effectively. \nThis practice helps to avoid memory leaks by ensuring resources are released.",
+          "timestamp": "2025/02/17 08:41:25"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "PY-028",
+      "Component": "Exception Handling",
+      "Summary": "Python|Unhandled Exception",
+      "Description": "Occurs when an exception is not caught and handled, causing the program to crash.",
+      "CreatedOn": "2025/02/18 06:30:00",
+      "UpdatedOn": "2025/02/19 07:35:15",
+      "Comment": [
+        {
+          "comment": "Use try-except blocks to catch and handle exceptions. \nThis helps to manage unexpected errors and prevent program crashes. \nIt allows for graceful error handling and recovery.",
+          "timestamp": "2025/02/18 06:31:00"
+        },
+        {
+          "comment": "Log exceptions to help diagnose issues. \nLogging provides valuable information about the nature and location of errors. \nIt helps to troubleshoot and fix issues more effectively.",
+          "timestamp": "2025/02/19 07:36:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-029",
+      "Component": "Exception Handling",
+      "Summary": "Python|Unhandled Exception",
+      "Description": "Occurs when a socket operation times out.",
+      "CreatedOn": "2025/02/20 05:25:50",
+      "UpdatedOn": "2025/02/21 06:30:05",
+      "Comment": [
+        {
+          "comment": "Set appropriate timeout values for socket operations. \nTimeouts help to prevent indefinite blocking on socket operations. \nThey ensure that the program can recover from network issues.",
+          "timestamp": "2025/02/20 05:26:50"
+        },
+        {
+          "comment": "Use try-except blocks to handle socket timeouts. \nCatching the timeout exception allows for graceful error handling and recovery. \nIt helps to manage unexpected network delays.",
+          "timestamp": "2025/02/21 06:31:05"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-030",
+      "Component": "Exception Handling",
+      "Summary": "Python|Unhandled Exception",
+      "Description": "A vulnerability in the password reset functionality was discovered.",
+      "CreatedON": "2025-02-14T08:00:00Z",
+      "UpdatedOn": "2025-02-14T12:00:00Z",
+      "Comment": [
+        {
+          "comment": "Security exception handled by security team.",
+          "timestamp": "2025-02-14T08:05:00Z"
+        },
+        {
+          "comment": "Security password Patch development in progress.",
+          "timestamp": "2025-02-14T09:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-031",
+      "Component": "Exception Handling",
+      "Summary": "Python|Unhandled Exception",
+      "Description": "The modal window on the profile page does not close when clicking the 'X' button.",
+      "CreatedON": "2025-02-15T07:00:00Z",
+      "UpdatedOn": "2025-02-15T11:00:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by product network client side team.",
+          "timestamp": "2025-02-15T07:05:00Z"
+        },
+        {
+          "comment": "PythonScript error identified.",
+          "timestamp": "2025-02-15T08:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "PY-032",
+      "Component": "Data Processing",
+      "Summary": "Python|DataFrame Performance",
+      "Description": "Performance issues when processing large DataFrames with pandas.",
+      "CreatedOn": "2025/02/22 04:20:40",
+      "UpdatedOn": "2025/02/23 05:25:55",
+      "Comment": [
+        {
+          "comment": "Use vectorized operations to improve DataFrame performance. \nVectorized operations are optimized for performance and can handle large datasets efficiently. \nThey help to avoid the overhead of Python loops.",
+          "timestamp": "2025/02/22 04:21:40"
+        },
+        {
+          "comment": "Consider using Dask for parallel processing of large DataFrames. \nDask provides a parallel computing framework that scales pandas operations. \nIt helps to manage and process large datasets more effectively.",
+          "timestamp": "2025/02/23 05:26:55"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-033",
+      "Component": "Data Processing",
+      "Summary": "Python|DataFrame Performance",
+      "Description": "One of the backend services is experiencing unusually high CPU usage.",
+      "CreatedON": "2025-02-16T06:00:00Z",
+      "UpdatedOn": "2025-02-16T10:00:00Z",
+      "Comment": [
+        {
+          "comment": "CPU usage spike observed.",
+          "timestamp": "2025-02-16T06:05:00Z"
+        },
+        {
+          "comment": "Service restarted.",
+          "timestamp": "2025-02-16T07:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-034",
+      "Component": "Data Processing",
+      "Summary": "Python|DataFrame Performance",
+      "Description": "One of the API endpoints is returning a 500 Internal Server Error.",
+      "CreatedON": "2025-02-17T05:00:00Z",
+      "UpdatedOn": "2025-02-17T09:00:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by client.",
+          "timestamp": "2025-02-17T05:05:00Z"
+        },
+        {
+          "comment": "Error logs reviewed.",
+          "timestamp": "2025-02-17T06:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-035",
+      "Component": "Data Processing",
+      "Summary": "Python|DataFrame Performance",
+      "Description": "A cross-site scripting vulnerability was found in the comments section.",
+      "CreatedON": "2025-02-18T04:00:00Z",
+      "UpdatedOn": "2025-02-18T08:00:00Z",
+      "Comment": [
+        {
+          "comment": " Data Security alert triggered.",
+          "timestamp": "2025-02-18T04:05:00Z"
+        },
+        {
+          "comment": "Data Input validation implemented.",
+          "timestamp": "2025-02-18T07:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-036",
+      "Component": "Data Processing",
+      "Summary": "Python|DataFrame Performance",
+      "Description": "Security issues related to using pickle for serialization.",
+      "CreatedOn": "2025/02/24 03:15:30",
+      "UpdatedOn": "2025/02/25 04:20:45",
+      "Comment": [
+        {
+          "comment": "Avoid unpickling data from untrusted sources. \nPickle can execute arbitrary code during unpickling, posing a security risk. \nAlways validate and sanitize input data before unpickling.",
+          "timestamp": "2025/02/24 03:16:30"
+        },
+        {
+          "comment": "Consider using safer serialization formats like JSON. \nJSON is a text-based format that does not execute code during deserialization. \nIt provides a more secure alternative to pickle for data exchange.",
+          "timestamp": "2025/02/25 04:21:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-037",
+      "Component": "Testing",
+      "Summary": "Python|Unit Test Coverage",
+      "Description": "Low test coverage in unit tests.",
+      "CreatedOn": "2025/02/26 02:10:20",
+      "UpdatedOn": "2025/02/27 03:15:35",
+      "Comment": [
+        {
+          "comment": "Use coverage.py to measure test coverage. \nCoverage.py provides detailed reports on which parts of the code are tested. \nIt helps to identify untested code and improve test coverage.",
+          "timestamp": "2025/02/26 02:11:20"
+        },
+        {
+          "comment": "Write additional tests to cover untested code paths. \nFocus on edge cases and error conditions to ensure comprehensive testing. \nThis practice helps to improve the reliability and robustness of the code.",
+          "timestamp": "2025/02/27 03:16:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-038",
+      "Component": "Testing",
+      "Summary": "Python|Unit Test Coverage",
+      "Description": "Form validation is not working correctly on the registration page.",
+      "CreatedON": "2025-02-19T03:00:00Z",
+      "UpdatedOn": "2025-02-19T07:30:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by validation user team.",
+          "timestamp": "2025-02-19T03:05:00Z"
+        },
+        {
+          "comment": "Validation rules updated.",
+          "timestamp": "2025-02-19T04:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-039",
+      "Component": "Testing",
+      "Summary": "Python|Unit Test Coverage",
+      "Description": "One of the backend services is not responding to requests.",
+      "CreatedON": "2025-02-20T02:00:00Z",
+      "UpdatedOn": "2025-02-20T06:30:00Z",
+      "Comment": [
+        {
+          "comment": "Service downtime reported.",
+          "timestamp": "2025-02-20T02:05:00Z"
+        },
+        {
+          "comment": "Service restarted by client.",
+          "timestamp": "2025-02-20T03:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "PY-040",
+      "Component": "Testing",
+      "Summary": "Python|Unit Test Coverage",
+      "Description": "Performance issues due to slow loops in Python.",
+      "CreatedOn": "2025/02/28 01:05:10",
+      "UpdatedOn": "2025/03/01 02:10:25",
+      "Comment": [
+        {
+          "comment": "Use list comprehensions or generator expressions to improve loop performance. \nThese constructs are optimized for performance and can handle large datasets efficiently. \nThey help to avoid the overhead of traditional for loops.",
+          "timestamp": "2025/02/28 01:06:10"
+        },
+        {
+          "comment": "Consider using libraries like NumPy for numerical computations. \nNumPy provides highly optimized array operations that can significantly improve performance. \nIt helps to manage and process large numerical datasets more effectively.",
+          "timestamp": "2025/03/01 02:11:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-041",
+      "Component": "Recursion",
+      "Summary": "Java|Stack Overflow Error",
+      "Description": "Stack Overflow error occurs due to infinite recursion or excessive method calls.",
+      "CreatedOn": "2025/01/10 12:00:00",
+      "UpdatedOn": "2025/01/11 13:05:15",
+      "Comment": [
+        {
+          "comment": "Always ensure that recursive methods have an appropriate termination condition. \nThis helps to prevent infinite recursion, which can lead to a Stack Overflow error. \nProper base cases are essential for terminating recursive calls.",
+          "timestamp": "2025/01/10 12:01:00"
+        },
+        {
+          "comment": "Check for potential infinite loops in recursive methods. \nAdding proper base cases can help terminate the recursion. \nReview the logic to ensure that the recursion will eventually stop.",
+          "timestamp": "2025/01/11 13:06:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-042",
+      "Component": "Recursion",
+      "Summary": "Java|Stack Overflow Error",
+      "Description": "The API documentation is outdated and needs to be updated.",
+      "CreatedON": "2025-02-21T01:00:00Z",
+      "UpdatedOn": "2025-02-21T05:30:00Z",
+      "Comment": [
+        {
+          "comment": "API token Issue reported by developer.",
+          "timestamp": "2025-02-21T01:05:00Z"
+        },
+        {
+          "comment": "API Documentation update in progress.",
+          "timestamp": "2025-02-21T02:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-043",
+      "Component": "Recursion",
+      "Summary": "Java|Stack Overflow Error",
+      "Description": "A SQL injection vulnerability was found in the search functionality.",
+      "CreatedON": "2025-02-22T00:00:00Z",
+      "UpdatedOn": "2025-02-22T04:30:00Z",
+      "Comment": [
+        {
+          "comment": "SQL Security team notified.",
+          "timestamp": "2025-02-22T00:05:00Z"
+        },
+        {
+          "comment": " Metadata Input sanitization implemented.",
+          "timestamp": "2025-02-22T01:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-044",
+      "Component": "Recursion",
+      "Summary": "Java|Stack Overflow Error",
+      "Description": "Occurs when an operation is attempted on an object reference that has not been initialized.",
+      "CreatedOn": "2025/01/12 11:55:50",
+      "UpdatedOn": "2025/01/13 12:00:05",
+      "Comment": [
+        {
+          "comment": "Thorough validation before object usage can prevent NullPointerExceptions. \nAlways check if the object is null before calling methods on it. \nThis practice helps to avoid unexpected crashes due to null references.",
+          "timestamp": "2025/01/12 11:56:50"
+        },
+        {
+          "comment": "Use Optional to handle potential null values. \nOptional provides a way to handle nulls gracefully and avoid NullPointerExceptions.",
+          "timestamp": "2025/01/13 12:01:05"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-045",
+      "Component": "Class Loading",
+      "Summary": "Java|ClassNotFoundException",
+      "Description": "Thrown when an application tries to load a class through its string name but no definition for the class with the specified name could be found.",
+      "CreatedOn": "2025/01/14 10:50:40",
+      "UpdatedOn": "2025/01/15 11:55:55",
+      "Comment": [
+        {
+          "comment": "Verify that the class is included in the classpath and correctly spelled. \nCheck the build path and dependencies to confirm the class is accessible.",
+          "timestamp": "2025/01/14 10:51:40"
+        },
+        {
+          "comment": "Ensure the class file is available in the specified directory. \nCheck the build path and dependencies to confirm the class is accessible. \nThis helps to avoid ClassNotFoundException by ensuring the class is present.",
+          "timestamp": "2025/01/15 11:56:55"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-046",
+      "Component": "Class Loading",
+      "Summary": "Java|ClassNotFoundException",
+      "Description": "The sidebar does not collapse when clicking the collapse button.",
+      "CreatedON": "2025-02-24T10:00:00Z",
+      "UpdatedOn": "2025-02-24T15:30:00Z",
+      "Comment": [
+        {
+          "comment": "Privacy Issue reported by user.",
+          "timestamp": "2025-02-24T10:05:00Z"
+        },
+        {
+          "comment": "Assigned to DEV frontend team.",
+          "timestamp": "2025-02-24T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-047",
+      "Component": "Class Loading",
+      "Summary": "Java|ClassNotFoundException",
+      "Description": "Cache is not being invalidated properly, leading to stale data.",
+      "CreatedON": "2025-02-25T09:00:00Z",
+      "UpdatedOn": "2025-02-25T14:00:00Z",
+      "Comment": [
+        {
+          "comment": "Reported by monitoring system.",
+          "timestamp": "2025-02-25T09:05:00Z"
+        },
+        {
+          "comment": "Investigating cache policies.",
+          "timestamp": "2025-02-25T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-048",
+      "Component": "Class Loading",
+      "Summary": "Java|ClassNotFoundException",
+      "Description": "Thrown when the Java Virtual Machine cannot allocate an object because it is out of memory.",
+      "CreatedOn": "2025/01/16 09:45:30",
+      "UpdatedOn": "2025/01/17 10:50:45",
+      "Comment": [
+        {
+          "comment": "Consider optimizing memory usage or increasing the heap size. \nReview the application's memory consumption and adjust the JVM settings if necessary. \nThis helps to avoid OutOfMemoryError by ensuring sufficient memory is available.",
+          "timestamp": "2025/01/16 09:46:30"
+        },
+        {
+          "comment": "Use memory profiling tools to identify memory leaks. \nTools like VisualVM or YourKit can help pinpoint areas where memory is not being released properly. \nThey provide insights into memory usage and potential leaks.",
+          "timestamp": "2025/01/17 10:51:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-050",
+      "Component": "Collections",
+      "Summary": "Java|ConcurrentModificationException",
+      "Description": "Thrown when a method detects concurrent modification of an object when such modification is not permissible.",
+      "CreatedOn": "2025/01/18 08:40:20",
+      "UpdatedOn": "2025/01/19 09:45:35",
+      "Comment": [
+        {
+          "comment": "Use concurrent collections or synchronize access to avoid this exception. \nConcurrent collections like CopyOnWriteArrayList can help manage concurrent modifications. \nThey provide thread-safe alternatives to standard collections.",
+          "timestamp": "2025/01/18 08:41:20"
+        },
+        {
+          "comment": "Iterate over a copy of the collection to prevent concurrent modification. \nCreating a snapshot of the collection can help avoid modification issues. \nThis practice helps to maintain the integrity of the collection during iteration.",
+          "timestamp": "2025/01/19 09:46:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-051",
+      "Component": "Collections",
+      "Summary": "Java|ConcurrentModificationException",
+      "Description": "Certain API endpoints are returning 404 Not Found errors.",
+      "CreatedON": "2025-02-26T11:00:00Z",
+      "UpdatedOn": "2025-02-26T13:30:00Z",
+      "Comment": [
+        {
+          "comment": "API response Issue reported by client.",
+          "timestamp": "2025-02-26T11:05:00Z"
+        },
+        {
+          "comment": "Endpoints reviewed and fixed.",
+          "timestamp": "2025-02-26T12:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-052",
+      "Component": "Collections",
+      "Summary": "Java|ConcurrentModificationException",
+      "Description": "Multiple brute force attack attempts detected on login endpoint.",
+      "CreatedON": "2025-02-27T08:00:00Z",
+      "UpdatedOn": "2025-02-27T12:00:00Z",
+      "Comment": [
+        {
+          "comment": "Java Security alert triggered.",
+          "timestamp": "2025-02-27T08:05:00Z"
+        },
+        {
+          "comment": "IP addresses blocked.",
+          "timestamp": "2025-02-27T09:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "JAVA-053",
+      "Component": "Collections",
+      "Summary": "Java|ConcurrentModificationException",
+      "Description": "Thrown to indicate that an array has been accessed with an illegal index.",
+      "CreatedOn": "2025/01/20 07:35:10",
+      "UpdatedOn": "2025/01/21 08:40:25",
+      "Comment": [
+        {
+          "comment": "Always check the array length before accessing an index. \nThis helps to ensure that the index is within the valid range. \nIt prevents ArrayIndexOutOfBoundsException and maintains code stability.",
+          "timestamp": "2025/01/20 07:36:10"
+        },
+        {
+          "comment": "Use try-catch blocks to handle potential ArrayIndexOutOfBoundsExceptions. \nCatching this exception allows for graceful error handling and recovery. \nIt helps to manage unexpected index access issues.",
+          "timestamp": "2025/01/21 08:41:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-054",
+      "Component": "Method Arguments",
+      "Summary": "Java|IllegalArgumentException",
+      "Description": "Thrown to indicate that a method has been passed an illegal or inappropriate argument.",
+      "CreatedOn": "2025/01/22 06:30:00",
+      "UpdatedOn": "2025/01/23 07:35:15",
+      "Comment": [
+        {
+          "comment": "Validate method arguments before processing. \nEnsure that the arguments meet the expected criteria before using them. \nThis practice helps to avoid IllegalArgumentException and maintain code integrity.",
+          "timestamp": "2025/01/22 06:31:00"
+        },
+        {
+          "comment": "Use Preconditions to check argument validity. \nLibraries like Guava provide utilities to validate method arguments. \nThis helps to write more robust and error-resistant code.",
+          "timestamp": "2025/01/23 07:36:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-055",
+      "Component": "Method Arguments",
+      "Summary": "Java|IllegalArgumentException",
+      "Description": "The search bar is not responsive on mobile devices.",
+      "CreatedON": "2025-02-28T07:00:00Z",
+      "UpdatedOn": "2025-02-28T11:00:00Z",
+      "Comment": [
+        {
+          "comment": "Transport Issue reported by DEV team.",
+          "timestamp": "2025-02-28T07:05:00Z"
+        },
+        {
+          "comment": "CSS adjustments made.",
+          "timestamp": "2025-02-28T08:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-056",
+      "Component": "Method Arguments",
+      "Summary": "Java|IllegalArgumentException",
+      "Description": "Backend service requires frequent restarts to function properly.",
+      "CreatedON": "2025-03-01T06:00:00Z",
+      "UpdatedOn": "2025-03-01T10:00:00Z",
+      "Comment": [
+        {
+          "comment": "API Service instability observed.",
+          "timestamp": "2025-03-01T06:05:00Z"
+        },
+        {
+          "comment": "Root cause analysis in progress.",
+          "timestamp": "2025-03-01T07:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-057",
+      "Component": "Method Arguments",
+      "Summary": "Java|IllegalArgumentException",
+      "Description": "API is returning incorrect status codes for certain requests.",
+      "CreatedON": "2025-03-02T05:00:00Z",
+      "UpdatedOn": "2025-03-02T09:00:00Z",
+      "Comment": [
+        {
+          "comment": "JAVA Issue reported by client.",
+          "timestamp": "2025-03-02T05:05:00Z"
+        },
+        {
+          "comment": "Status codes reviewed and corrected.",
+          "timestamp": "2025-03-02T06:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-058",
+      "Component": "Method Arguments",
+      "Summary": "Java|IllegalArgumentException",
+      "Description": "Thrown to indicate that the application has attempted to convert a string to one of the numeric types, but that the string does not have the appropriate format.",
+      "CreatedOn": "2025/01/24 05:25:50",
+      "UpdatedOn": "2025/01/25 06:30:05",
+      "Comment": [
+        {
+          "comment": "Use try-catch blocks to handle potential NumberFormatExceptions. \nThis can help manage unexpected string formats during conversion. \nCatching the exception allows for graceful error handling and recovery.",
+          "timestamp": "2025/01/24 05:26:50"
+        },
+        {
+          "comment": "Validate the string format before conversion. \nEnsure that the string matches the expected numeric format before attempting to convert it. \nThis practice helps to avoid NumberFormatException and maintain code stability.",
+          "timestamp": "2025/01/25 06:31:05"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-059",
+      "Component": "I/O Operations",
+      "Summary": "Java|IOException",
+      "Description": "Signals that an I/O exception of some sort has occurred.",
+      "CreatedOn": "2025/01/26 04:20:40",
+      "UpdatedOn": "2025/01/27 05:25:55",
+      "Comment": [
+        {
+          "comment": "Ensure proper handling of I/O operations with try-catch blocks. \nThis helps to manage unexpected I/O errors gracefully. \nCatching the exception allows for graceful error handling and recovery.",
+          "timestamp": "2025/01/26 04:21:40"
+        },
+        {
+          "comment": "Check for resource availability before performing I/O operations. \nEnsure that the necessary resources are accessible and available. \nThis practice helps to avoid IOException and maintain code stability.",
+          "timestamp": "2025/01/27 05:26:55"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-060",
+      "Component": "I/O Operations",
+      "Summary": "Java|IOException",
+      "Description": "Certain database queries need optimization for better performance.",
+      "CreatedON": "2025-03-05T02:00:00Z",
+      "UpdatedOn": "2025-03-05T06:30:00Z",
+      "Comment": [
+        {
+          "comment": "Slow queries identified.",
+          "timestamp": "2025-03-05T02:05:00Z"
+        },
+        {
+          "comment": "Query optimization in progress.",
+          "timestamp": "2025-03-05T03:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-061",
+      "Component": "I/O Operations",
+      "Summary": "Java|IOException",
+      "Description": "Clients are facing issues due to lack of proper API versioning.",
+      "CreatedON": "2025-03-06T01:00:00Z",
+      "UpdatedOn": "2025-03-06T05:30:00Z",
+      "Comment": [
+        {
+          "comment": "Programmed Issue reported by developer.",
+          "timestamp": "2025-03-06T01:05:00Z"
+        },
+        {
+          "comment": "Versioning strategy implemented.",
+          "timestamp": "2025-03-06T02:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "JAVA-062",
+      "Component": "I/O Operations",
+      "Summary": "Java|FileNotFoundException",
+      "Description": "Signals that an attempt to open the file denoted by a specified pathname has failed.",
+      "CreatedOn": "2025/01/28 03:15:30",
+      "UpdatedOn": "2025/01/29 04:20:45",
+      "Comment": [
+        {
+          "comment": "Ensure the file path is correct and the file exists. \nDouble-check the file path for typos and confirm the file's presence. \nThis helps to avoid FileNotFoundException by ensuring the file is accessible.",
+          "timestamp": "2025/01/28 03:16:30"
+        },
+        {
+          "comment": "Use try-catch blocks to handle potential FileNotFoundExceptions. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected file access issues.",
+          "timestamp": "2025/01/29 04:21:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-063",
+      "Component": "Networking",
+      "Summary": "Java|SocketTimeoutException",
+      "Description": "Thrown to indicate that a socket read or accept timed out.",
+      "CreatedOn": "2025/01/30 02:10:20",
+      "UpdatedOn": "2025/01/31 03:15:35",
+      "Comment": [
+        {
+          "comment": "Set appropriate timeout values for socket operations. \nTimeouts help to prevent indefinite blocking on socket operations. \nThey ensure that the program can recover from network issues.",
+          "timestamp": "2025/01/30 02:11:20"
+        },
+        {
+          "comment": "Use try-catch blocks to handle SocketTimeoutExceptions. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected network delays.",
+          "timestamp": "2025/01/31 03:16:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-064",
+      "Component": "Networking",
+      "Summary": "Java|SocketTimeoutException",
+      "Description": "Tooltip text is truncated on hover over certain elements.",
+      "CreatedON": "2025-03-17T03:00:00Z",
+      "UpdatedOn": "2025-03-17T07:30:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by client side user.",
+          "timestamp": "2025-03-17T03:05:00Z"
+        },
+        {
+          "comment": "Tooltip CSS updated.",
+          "timestamp": "2025-03-17T04:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-065",
+      "Component": "Networking",
+      "Summary": "Java|SocketTimeoutException",
+      "Description": "One of the backend services is failing due to a dependency issue.",
+      "CreatedON": "2025-03-18T02:00:00Z",
+      "UpdatedOn": "2025-03-18T06:30:00Z",
+      "Comment": [
+        {
+          "comment": "Developer SQL Dependency issue identified.",
+          "timestamp": "2025-03-18T02:05:00Z"
+        },
+        {
+          "comment": "Dependency updated and service restarted.",
+          "timestamp": "2025-03-18T03:00:00Z"
+        }
+      ]
+    }, 
+    {
+      "JIRAID": "JAVA-066",
+      "Component": "Networking",
+      "Summary": "Java|SocketTimeoutException",
+      "Description": "Occurs when two or more threads are blocked forever, waiting for each other.",
+      "CreatedOn": "2025/02/02 01:05:10",
+      "UpdatedOn": "2025/02/03 02:10:25",
+      "Comment": [
+        {
+          "comment": "Use thread dumps to diagnose deadlocks. \nThread dumps provide information about the state of all threads in the JVM. \nThey help to identify which threads are involved in the deadlock.",
+          "timestamp": "2025/02/02 01:06:10"
+        },
+        {
+          "comment": "Avoid nested locks and use a consistent lock ordering. \nNested locks can lead to deadlocks if not managed carefully. \nUsing a consistent lock ordering helps to prevent deadlocks.",
+          "timestamp": "2025/02/03 02:11:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-067",
+      "Component": "Memory Management",
+      "Summary": "Java|Memory Leak",
+      "Description": "Occurs when a program consumes more memory over time due to improper resource management.",
+      "CreatedOn": "2025/02/04 12:00:00",
+      "UpdatedOn": "2025/02/05 13:05:15",
+      "Comment": [
+        {
+          "comment": "Use memory profiling tools to identify memory leaks. \nTools like VisualVM or YourKit can help pinpoint areas where memory is not being released properly. \nThey provide insights into memory usage and potential leaks.",
+          "timestamp": "2025/02/04 12:01:00"
+        },
+        {
+          "comment": "Ensure proper cleanup of resources, such as closing files and connections. \nUsing try-with-resources statements helps to manage resources effectively. \nThis practice helps to avoid memory leaks by ensuring resources are released.",
+          "timestamp": "2025/02/05 13:06:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-068",
+      "Component": "Memory Management",
+      "Summary": "Java|Memory Leak",
+      "Description": "Links in the footer section are not clickable.",
+      "CreatedON": "2025-03-09T10:00:00Z",
+      "UpdatedOn": "2025-03-09T15:30:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by organization side user.",
+          "timestamp": "2025-03-09T10:05:00Z"
+        },
+        {
+          "comment": "CSS z-index issue identified.",
+          "timestamp": "2025-03-09T11:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-069",
+      "Component": "Memory Management",
+      "Summary": "Java|Memory Leak",
+      "Description": "Data migration process failed during the last deployment.",
+      "CreatedON": "2025-03-10T09:00:00Z",
+      "UpdatedOn": "2025-03-10T14:00:00Z",
+      "Comment": [
+        {
+          "comment": "Migration script error detected.",
+          "timestamp": "2025-03-10T09:05:00Z"
+        },
+        {
+          "comment": "Script corrected and migration retried.",
+          "timestamp": "2025-03-10T10:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "JAVA-070",
+      "Component": "Memory Management",
+      "Summary": "Java|Memory Leak",
+      "Description": "Occurs when an exception is not caught and handled, causing the program to crash.",
+      "CreatedOn": "2025/02/06 11:55:50",
+      "UpdatedOn": "2025/02/07 12:00:05",
+      "Comment": [
+        {
+          "comment": "Use try-catch blocks to catch and handle exceptions. \nThis helps to manage unexpected errors and prevent program crashes. \nIt allows for graceful error handling and recovery.",
+          "timestamp": "2025/02/06 11:56:50"
+        },
+        {
+          "comment": "Log exceptions to help diagnose issues. \nLogging provides valuable information about the nature and location of errors. \nIt helps to troubleshoot and fix issues more effectively.",
+          "timestamp": "2025/02/07 12:01:05"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-071",
+      "Component": "Memory Management",
+      "Summary": "Java|Memory Leak",
+      "Description": "Thrown to indicate that a socket read or accept timed out.",
+      "CreatedOn": "2025/02/08 10:50:40",
+      "UpdatedOn": "2025/02/09 11:55:55",
+      "Comment": [
+        {
+          "comment": "Set appropriate timeout values for socket operations. \nTimeouts help to prevent indefinite blocking on socket operations. \nThey ensure that the program can recover from network issues.",
+          "timestamp": "2025/02/08 10:51:40"
+        },
+        {
+          "comment": "Use try-catch blocks to handle SocketTimeoutExceptions. \nCatching the exception allows for graceful error handling and recovery. \nIt helps to manage unexpected network delays.",
+          "timestamp": "2025/02/09 11:56:55"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-072",
+      "Component": "Serialization",
+      "Summary": "Java|Serialization Issue",
+      "Description": "Occurs when two or more threads are blocked forever, waiting for each other.",
+      "CreatedOn": "2025/02/10 09:45:30",
+      "UpdatedOn": "2025/02/11 10:50:45",
+      "Comment": [
+        {
+          "comment": "Use thread dumps to diagnose deadlocks. \nThread dumps provide information about the state of all threads in the JVM. \nThey help to identify which threads are involved in the deadlock.",
+          "timestamp": "2025/02/10 09:46:30"
+        },
+        {
+          "comment": "Avoid nested locks and use a consistent lock ordering. \nNested locks can lead to deadlocks if not managed carefully. \nUsing a consistent lock ordering helps to prevent deadlocks.",
+          "timestamp": "2025/02/11 10:51:45"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-073",
+      "Component": "Serialization",
+      "Summary": "Java|Serialization Issue",
+      "Description": "A Cross-Site Request Forgery (CSRF) vulnerability was found in the payment module.",
+      "CreatedON": "2025-03-12T08:00:00Z",
+      "UpdatedOn": "2025-03-12T12:00:00Z",
+      "Comment": [
+        {
+          "comment": "JAVA_Security team notified.",
+          "timestamp": "2025-03-12T08:05:00Z"
+        },
+        {
+          "comment": "JAVA_CSRF tokens implemented.",
+          "timestamp": "2025-03-12T09:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-074",
+      "Component": "Serialization",
+      "Summary": "Java|Serialization Issue",
+      "Description": "Options in the dropdown menu are not visible on the profile page.",
+      "CreatedON": "2025-03-13T07:00:00Z",
+      "UpdatedOn": "2025-03-13T11:00:00Z",
+      "Comment": [
+        {
+          "comment": "Issue reported by JAVA_QA team.",
+          "timestamp": "2025-03-13T07:05:00Z"
+        },
+        {
+          "comment": "JAVA_CSS visibility issue fixed.",
+          "timestamp": "2025-03-13T08:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "JAVA-075",
+      "Component": "Serialization",
+      "Summary": "Java|Serialization Issue",
+      "Description": "Issues related to Java object serialization and deserialization.",
+      "CreatedOn": "2025/02/12 08:40:20",
+      "UpdatedOn": "2025/02/13 09:45:35",
+      "Comment": [
+        {
+          "comment": "Ensure that all serializable classes have a serialVersionUID. \nThe serialVersionUID is used to verify the sender and receiver of a serialized object. \nIt helps to maintain compatibility between different versions of the class.",
+          "timestamp": "2025/02/12 08:41:20"
+        },
+        {
+          "comment": "Use transient keyword for fields that should not be serialized. \nThe transient keyword prevents sensitive or non-essential fields from being serialized. \nThis helps to maintain the integrity and security of serialized objects.",
+          "timestamp": "2025/02/13 09:46:35"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-076",
+      "Component": "Serialization",
+      "Summary": "Java|Serialization Issue",
+      "Description": "Performance issues related to using reflection in Java.",
+      "CreatedOn": "2025/02/14 07:35:10",
+      "UpdatedOn": "2025/02/15 08:40:25",
+      "Comment": [
+        {
+          "comment": "Minimize the use of reflection in performance-critical code. \nReflection can be slower than direct method calls due to its dynamic nature. \nUse reflection sparingly and only when necessary.",
+          "timestamp": "2025/02/14 07:36:10"
+        },
+        {
+          "comment": "Cache reflective operations to improve performance. \nCaching the results of reflective operations can reduce overhead. \nThis practice helps to maintain performance while using reflection.",
+          "timestamp": "2025/02/15 08:41:25"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JAVA-077",
+      "Component": "Monitoring",
+      "Summary": "Java|Monitoring Test Coverage",
+      "Description": "Low test coverage in unit tests.",
+      "CreatedOn": "2025/02/16 06:30:00",
+      "UpdatedOn": "2025/02/17 07:35:15",
+      "Comment": [
+        {
+          "comment": "Use tools like JaCoCo to measure test coverage. \nJaCoCo provides detailed reports on which parts of the code are tested. \nIt helps to identify untested code and improve test coverage.",
+          "timestamp": "2025/02/16 06:31:00"
+        },
+        {
+          "comment": "Write additional tests to cover untested code paths. \nFocus on edge cases and error conditions to ensure comprehensive testing. \nThis practice helps to improve the reliability and robustness of the code.",
+          "timestamp": "2025/02/17 07:36:15"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-078",
+      "Component": "Monitoring",
+      "Summary": "Java|Monitoring Test Coverage",
+      "Description": "Tooltip text is truncated on hover over certain elements.",
+      "CreatedON": "2025-03-17T03:00:00Z",
+      "UpdatedOn": "2025-03-17T07:30:00Z",
+      "Comment": [
+        {
+          "comment": "Monitoring Issue reported by user.",
+          "timestamp": "2025-03-17T03:05:00Z"
+        },
+        {
+          "comment": "Monitoring Tooltip CSS updated.",
+          "timestamp": "2025-03-17T04:00:00Z"
+        }
+      ]
+    },
+    {
+      "JIRAID": "JIRA-079",
+      "Component": "Monitoring",
+      "Summary": "Java|Monitoring Test Coverage",
+      "Description": "One of the backend services is failing due to a dependency issue.",
+      "CreatedON": "2025-03-18T02:00:00Z",
+      "UpdatedOn": "2025-03-18T06:30:00Z",
+      "Comment": [
+        {
+          "comment": "Monitoring Dependency issue identified.",
+          "timestamp": "2025-03-18T02:05:00Z"
+        },
+        {
+          "comment": "Monitoring Dependency updated and service restarted.",
+          "timestamp": "2025-03-18T03:00:00Z"
+        }
+      ]
+    },
+  
+    {
+      "JIRAID": "JAVA-080",
+      "Component": "Monitoring",
+      "Summary": "Java|Monitoring Test Coverage",
+      "Description": "Performance issues due to slow loops in Java.",
+      "CreatedOn": "2025/02/18 05:25:50",
+      "UpdatedOn": "2025/02/19 06:30:05",
+      "Comment": [
+        {
+          "comment": "Use enhanced for loops or streams to improve loop performance. \nEnhanced for loops and streams are optimized for performance and can handle large datasets efficiently. \nThey help to avoid the overhead of traditional for loops.",
+          "timestamp": "2025/02/18 05:26:50"
+        },
+        {
+          "comment": "Consider using parallel streams for parallel processing of large datasets. \nParallel streams provide a way to leverage multi-core processors for improved performance. \nThey help to manage and process large datasets more effectively.",
+          "timestamp": "2025/02/19 06:31:05"
+        }
+      ]
+    }
+  ]
+  
+  

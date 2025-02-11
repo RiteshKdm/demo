@@ -1,26 +1,22 @@
-import os
 import streamlit as st
-from groq import Groq
-from dotenv import load_dotenv
 import json
+from groq import Groq
+import os
+from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
 
-# Get API key with proper error handling
+# Get API key from environment or Streamlit secrets
+api_key = os.getenv('GROQ_API_KEY') or st.secrets["GROQ_API_KEY"]
+
+# Initialize Groq client
 try:
-    api_key = os.getenv('GROQ_API_KEY')
-    if not api_key:
-        api_key = st.secrets["GROQ_API_KEY"]
-    
-    if not api_key:
-        st.error("API key not found in environment variables or Streamlit secrets")
-        st.stop()
-        
     client = Groq(api_key=api_key)
 except Exception as e:
-    st.error(f"Failed to initialize Groq client: {str(e)}")
+    st.error("Failed to initialize Groq client. Please check your API key.")
     st.stop()
+
 
 
 def summarize_with_llm(text):
